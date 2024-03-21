@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 *{
     margin: 0;
@@ -426,30 +427,21 @@ button.btn-style:hover{
 
 /* login/signup form */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 a {
   text-decoration: none;
 }
 
 
 
-.button {
-  color: #fff;
+#navbar .button {
+  color: #000000;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-color: #ffffff;
 }
 
-.button {
-  padding: 6px 24px;
-  border: 2px solid #fff;
-  background: transparent;
-  border-radius: 6px;
-  cursor: pointer;
-}
+
 .button:active {
   transform: scale(0.98);
 }

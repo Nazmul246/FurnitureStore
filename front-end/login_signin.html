@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website with Login & Registration Form</title>
+    <link rel="stylesheet" href="stylesheet/login_signin.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">CodingLab</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Product</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>login/signing</title>
+    <title>CozyCove</title>
+    <link rel="stylesheet" href="stylesheet/home.css">
+    <link rel="stylesheet" href="stylesheet/login_signin.css">
+    <link rel="stylesheet" href="stylesheet/script.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <section id = 'header'>
+        <a href="index.html" id="logo">CozyCove</a>
+        <div>
+            <ul id ='navbar'>
+                <li><a class= "active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <button type="submit"><i class="ph-bold ph-magnifying-glass"></i></button>
+                      </form>
+                </li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a href="login_signin.html"><i class="ph ph-user"></i> Log In </a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="hero">
+            <div class="from-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="signin()">Sign Up</button>
+                </div>
+                <div class="social-icons">
+                    <img src="img/icon_facebook.png">
+                    <img src="img/icons-insta.png">
+                    <img src="img/icon-google.png">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span><b>Remember Password</b></span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="signin" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Name" required>
+                    <input type="text" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box"><span><b>I agree to terms & conditions</b></span>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>  
+            </div>
+        </div>
+    </section>
+    
+    <!-- <footer class="footer">
+        <div class="col">
+            <p id="logo">CozyCove</p>
+        </div>
+        <div>
+            <h4>Official Address</h4>
+            <p><strong><i class="ph-bold ph-house"></i> Address: </strong>Mohammadpur, Dhaka, Bangladesh</p>
+            <p><strong><i class="ph-bold ph-phone"></i> Phone Number: </strong>+880 1234567890</p>
+            <p><strong><i class="ph-bold ph-envelope-simple"></i> Gmail: </strong>cozycove@gmail.com</p>
+        </div>
+        <div class="col">
+            <h4>Our Company</h4>
+            <a href="#">About CozyCove</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="col">
+            <h4>More Information</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Need Help?</a>
+        </div>
+    </footer> -->
+    <!-- <div class="follow">
+        <h4><strong>Follow Us</strong></h4>
+        <div class="social-icons">
+            <img src="img/icon_facebook.png">
+            <img src="img/icons-insta.png">
+            <img src="img/icon-google.png">
+        </div>
+    </div> -->
+    
+    <!-- <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signin");
+        var z = document.getElementById("btn");
+
+        function signin(){
+            x.style.left = "-450px";
+            y.style.left = "15px";
+            z.style.left = "110px";
+
+        }
+
+        function login(){
+            x.style.left = "15px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+        }
+    </script>
+</body>
+</html> -->
